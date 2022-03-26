@@ -1,0 +1,6 @@
+.fixed {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 20px;
+    top: 81px;
+}

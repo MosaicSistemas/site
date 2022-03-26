@@ -12,62 +12,57 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <title>Mosaic</title>
 </head>
 <body>  
-<header>   
-    <img src="img/logo.png" alt="logo mosaic" class="logo">
-</header>    
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ">
 
-<nav class="dropdown">
-  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    <i class="fas fa-microchip"></i> Sistemas
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li> <a class="dropdown-item" href="pdv.html">Mosaic PDV</a></li>
-
-  </ul>
-
-
- 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-window-maximize"></i> Templates
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="doc.html">Documentação</a></li>
+            
+          
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <section>
-        <div>
-          <h2> mosaic pdv</h2>
-          <h4> algum texto</h4>
-          <p> outri texto</p>
-        </div>
-        <img src="img/pdv.png" alt="">
-      </section>
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
 <main>
-  
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ipsum illo officia reprehenderit labore, culpa alias ad debitis animi neque beatae error voluptas nisi cumque nesciunt quo tempora dolorum Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quia eligendi modi ex nobis consequuntur odit delectus? Dolorum est iste eius aut sit corrupti, explicabo earum, itaque praesentium recusandae autem.
+  </p>
 </main>
+<main id="programa">
+  <p>
+    Distribua softwares com um design simples, permitindo o download e a vizualização da documentação de suas criações <br>
+    <a href="doc.html">
+      <button>
+        Confira já
+      </button>
+    </a>
+  </p>
+  <img src="img/programação.png" alt="">
+</main>
+<main style="background-color: #7090c7;">
+  <img src="img/loja.jpg" alt="">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam adipisci possimus quidem omnis voluptatem nesciunt accusamus cupiditate, reprehenderit nobis, autem consequatur perferendis itaque accusantium distinctio atque numquam animi, quo consectetur!</p>
+</main>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
