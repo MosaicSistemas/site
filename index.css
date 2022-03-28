@@ -15,20 +15,15 @@ p {
     min-width: 300px;
     
 }
-p button {
-    background: none;
+main#programa button {
+    background-color: #0bd1b4;
+    color: #220e40;
     border-radius: 25px;
     height: 50px;
     width: 250px;
-    border: 2px solid #0bd1b4;
-    color: #0bd1b4;
+    border: none;
     font-size: 20px;
     margin-top: 30px;
-}
-
-main#programa button:hover {
-    background-color: #0bd1b4;
-    color: #220e40;
 }
 p img {
     width: 500%;
