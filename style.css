@@ -6,6 +6,7 @@
 }
 
 /*
+    azul escuro2 = #220e40
     azul-escuro = #000096
     azul-medio = #0053cc
     azul-claro = #0bd1b4
@@ -19,7 +20,7 @@ body {
 nav.navbar, header {
     padding: 5px;
     background-color: white !important;
-    box-shadow: 0 5px 5px #c8c8c8c8;
+    box-shadow: 0 5px 5px #0000001a;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -33,6 +34,10 @@ i.fa-bars {
 nav .nav-link {
     color: #000096 !important;
 }
+
+nav .nav-link:hover{
+    text-decoration: underline;
+}
 main > h1 {
     background-color: #d6d6d6;
     color: #505050;
@@ -43,15 +48,8 @@ main > h1 {
     grid-row: 1;
 }
 main {
-    font-size: 30px;
-    display: flex;
-    flex-direction: row;
+    font-size: 25px;
     
-}
-main.dark {
-    background-image: linear-gradient(
-        to bottom, #220e40, #211244);
-    color: white;
 }
 
 section {
@@ -96,8 +94,3 @@ li > a{
     color: rgb(0, 0, 150);
     text-decoration: none;
 }
-
-main h2, main h3, main h4, main h5 {
-    color: rgb(0, 0, 150);
-}
-
