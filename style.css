@@ -5,14 +5,15 @@
     src: url('fontes/Azonix.otf') format('opentype');
 }
 
-/*
-    azul escuro2 = #220e40
-    azul-escuro = #000096
-    azul-medio = #0053cc
-    azul-claro = #0bd1b4
-    cinza1 = #f7f7f7
-    cinza2 = #555555
-*/
+:root {
+    --azul-escuro: #220e40;
+    --azul-escuro2: #000096;
+    --azul: #0053cc;
+    --azul-claro: #0db1b4;
+    --cinza-claro: #f7f7f7;
+    --cinza: #c8c8c8;
+    --cinza-escuro: #555;
+}
 
 body {
     background-color: #f3f3f4;
@@ -29,33 +30,20 @@ nav.navbar, header {
 } 
 
 i.fa-bars {
-    color: #000096;
+    color: var(--azul-escuro2);
 }
 nav .nav-link {
-    color: #000096 !important;
+    color: var(--azul-escuro2) !important;
 }
 
 nav .nav-link:hover{
     text-decoration: underline;
 }
-main > h1 {
-    background-color: #d6d6d6;
-    color: #505050;
-    text-align: center;
-    font-weight: 300;
-    font-size: 40px;
-    grid-column: 1/6;
-    grid-row: 1;
-}
-main {
-    font-size: 25px;
-    
-}
 
 section {
     background-color: white;
     padding: 5px;
-    border: 1px solid #c8c8c8;;
+    border: 1px solid var(--cinza);
     font-size: 20px;
     height: fit-content;
 }
@@ -64,7 +52,7 @@ section {
     padding: 0px 5px;
 }
 .btn {
-    color: #000096 !important;
+    color: var(--azul-escuro2) !important;
     width: fit-content;
     max-width: 150px;
     border-radius: 0px;
@@ -73,24 +61,47 @@ section {
     height: fit-content;
 }
 .dropdown-item {
-    color: #000096 !important;
+    color: var(--azul-escuro2) !important;
     background-color: white !important;
     font-size: 15px !important;
     transition: 0.2s linear;
 }
 .dropdown-item:hover {
-    background-color: #c8c8c8 !important;
+    background-color: var(--cinza) !important;
 }
 ul {
     height: fit-content;
 }
 li {
-    color: rgb(0, 0, 150);
+    color: var(--azul-escuro2);
     font-size: 20px;
     height: fit-content;
 }
 
 li > a{
-    color: rgb(0, 0, 150);
+    color: var(--azul-escuro2);
     text-decoration: none;
+}
+
+footer {
+    height: fit-content;
+    background-color: var(--azul-escuro);
+    color: white;
+    font-size: 25px ;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: white;
+    width: 250px;
+    text-decoration: none;
+    flex: 0 0 250px;
+}
+
+footer a:hover {
+    color: white;
 }

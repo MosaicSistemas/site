@@ -1,23 +1,28 @@
+:root {
+    --azul-escuro: #220e40;
+    --azul-escuro2: #000096;
+    --azul: #0053cc;
+    --azul-claro: #0db1b4;
+    --cinza-claro: #f7f7f7;
+    --cinza: #c8c8c8;
+    --cinza-escuro: #555;
+}
+
+main {
+    height: 350px;
+    font-size: 25px;
+    background-repeat: no-repeat;
+}
+
 main#programa {
     background-image: url('img/programação.png');
     background-position: right;
-    background-repeat: no-repeat;
-    background-color: #220e40;
+    background-color: var(--azul-escuro);
     color: white;
-    height: 350px;
-    font-size: 25px;
-}
-
-p {
-    margin: 20px;
-    text-align: center;
-    max-width: 750px;
-    min-width: 300px;
-    
 }
 main#programa button {
-    background-color: #0bd1b4;
-    color: #220e40;
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
     border-radius: 25px;
     height: 50px;
     width: 250px;
@@ -25,15 +30,35 @@ main#programa button {
     font-size: 20px;
     margin-top: 30px;
 }
+main#tec {
+    background-color: var(--azul-claro);
+    padding: 10px;
+}
+main#python p {
+    float: right;
+    color: var(--azul-escuro);
+}
+main#tec img {
+    width: 300px;
+}
+
+main#home {
+    background-image: url('img/mosaic.svg');
+    background-position: right;
+}
+main#home p {
+    float: right;
+}
+p {
+    margin: 20px;
+    text-align: center;
+    max-width: 750px;
+    min-width: 300px;
+    
+}
 p img {
-    width: 500%;
+    width: 100%;
     height: 50%;
     max-width: 500px;
     max-height: 320px;
-}
-
-@media (max-width: 950px) {
-    p img {
-        display: none;
-    }
 }
